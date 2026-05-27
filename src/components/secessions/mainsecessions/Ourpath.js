@@ -16,8 +16,14 @@ function Ourpath(){
                     <p>That's how our founders first met on a classical yoga retreat in the heart of India and where the idea of BookRetreats began.</p>
                     <p>They'd go on to complete a 6 year sadhana(spiritual practice)together,meeting in India every year on retreat.</p>
                 </div>
-                <div className="path-image">
-                    <img src={img1} alt="" />
+                <div className="path-image path-image-featured">
+                    <img src={img1} alt="BookRetreats founders at a retreat" />
+                    <div className="image-callout image-callout-left">
+                        BookRetreats is an expression of my dedication toward a better, more peaceful world.
+                    </div>
+                    <div className="image-callout image-callout-right">
+                        The world is just a bunch of people. If you transform individual people, you can transform the world.
+                    </div>
                 </div>
             </div>
             <div className="path-row right-content">
