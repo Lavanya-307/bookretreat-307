@@ -1,0 +1,69 @@
+.wants-section {
+  width: 100%;
+  padding: 56px 48px;
+  background: #ffffff;
+}
+
+.want-left {
+  max-width: 596px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+
+.want-left h2 {
+  margin: 0;
+  color: #020817;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.want-btn {
+  min-width: 253px;
+  min-height: 53px;
+  padding: 0 32px;
+  border: 0;
+  border-radius: 14px;
+  background: #2d98f0;
+  color: #ffffff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.want-btn:hover {
+  background: #1f8dea;
+  transform: translateY(-1px);
+}
+
+.want-btn:focus-visible {
+  outline: 3px solid rgba(45, 152, 240, 0.32);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .wants-section {
+    padding: 40px 24px;
+  }
+
+  .want-left {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .want-left h2 {
+    font-size: 25px;
+  }
+
+  .want-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}

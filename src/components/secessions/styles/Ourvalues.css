@@ -1,0 +1,111 @@
+.ourvalues {
+  width: 100%;
+  padding: 4px;
+  background: #ffffff;
+  color: #001b44;
+}
+
+.ourvalues-title {
+  max-width: 952px;
+  margin:55px;
+  margin-left: 70px;
+  color: #061532;
+  font-size:38px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.ourvalues-cards {
+  width: 80%;
+  height: 550px;
+  margin:55px;
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.ourvalues-cards > div {
+  min-height: 230px;
+  padding: 26px 23px 24px;
+  border-radius: 21px;
+  background: #eef6ff;
+}
+
+.ourvalues-cards img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ourvalues-cards h3 {
+  margin: 0 0 10px;
+  color: #03152f;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.ourvalues-cards p {
+  margin: 0;
+  color: #001b44;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.ourvalues-card8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0f88ed !important;
+}
+
+.ourvalues-card8 p,
+.ourvalues-card8 h3 {
+  color: #ffffff;
+}
+
+.ourvalues-card8 p {
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.ourvalues-card8 h3 {
+  margin: 0;
+  max-width: 170px;
+  font-size: 19px;
+  line-height: 1.25;
+}
+
+@media (max-width: 900px) {
+  .ourvalues-title,
+  .ourvalues-cards {
+    max-width: 640px;
+  }
+
+  .ourvalues-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .ourvalues {
+    padding: 0 20px 56px;
+  }
+
+  .ourvalues-title {
+    margin-bottom: 22px;
+    font-size: 31px;
+  }
+
+  .ourvalues-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ourvalues-cards > div {
+    min-height: 0;
+  }
+}
